@@ -15,3 +15,13 @@
               Manager_Mail VARCHAR(70) NOT NULL, \
               CONSTRAINT unique_email UNIQUE(Manager_Mail)\
                         );
+
+После создания таблицы нужно добавить в неё данные. Делается это с помощью ключевых слов _INSERT INTO_, после которых указывается название таблицы и в скобках поля, в которые мы будем добавлять данные и _VALUES_, где мы указываем сами данные.
+
+>INSERT INTO Managers (Manager_Name, Manager_LastName, Manager_Mail) \
+>VALUES \
+>('Vasiliy', 'Petrov', 'vasya@mail.ru'), \
+>('Ivan', 'Nicolarv', 'Ivan@gmail.com'), \
+>('Cate', 'Manulaeva', 'Catalis@bk.ru'), \
+>('Dan', 'Chikunov' 'DenIs@mail.ru');
+
