@@ -1,3 +1,6 @@
+# Содержание
+1. [Создание базы данных]()
+
 # Создание базы данных 
 Создадим базу данных с названием mydb:
 > CREATE DATABASE IF NOT EXISTS mydb;
@@ -25,3 +28,15 @@
 >('Cate', 'Manulaeva', 'Catalis@bk.ru'), \
 >('Dan', 'Chikunov' 'DenIs@mail.ru');
 
+В итоге получим следующую таблицу
+
+![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/b99aef5a-e869-41eb-8d7c-78aa1a481bef)
+
+После создания всех таблиц, можно посмотреть их в нашей базе с помощью команды _\dt_
+
+![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/09934ee9-324c-4ea0-8549-d829e8051c41)
+
+Также получить название всех таблиц можно с помощью команды 
+> select * from information_schema.tables
+
+# Изменение схемы данных
