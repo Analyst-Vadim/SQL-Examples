@@ -27,17 +27,28 @@
 >('Vasiliy', 'Petrov', 'vasya@mail.ru'), \
 >('Ivan', 'Nicolarv', 'Ivan@gmail.com'), \
 >('Cate', 'Manulaeva', 'Catalis@bk.ru'), \
->('Dan', 'Chikunov' 'DenIs@mail.ru');
+>('Dan', 'Chikunov' 'DenIs');
 
 В итоге получим следующую таблицу
 
-![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/b99aef5a-e869-41eb-8d7c-78aa1a481bef)
+![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/9dd44d5f-bf56-4c5e-ab91-10762a22c968)
 
 После создания всех таблиц, можно посмотреть их в нашей базе с помощью команды _\dt_
 
 ![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/09934ee9-324c-4ea0-8549-d829e8051c41)
 
 Также получить название всех таблиц можно с помощью команды 
-> select * from information_schema.tables
+> SELECT * FROM information_schema.tables
 
 # Изменение схемы данных
+
+В процессе работы с базой данных может возникнуть потребность не только в написании запросов, но и изменение как самих таблиц, так и данных внутри них.
+Например в процессе работы мы поняли, что название столбца не является уникальным и путает. Поэтому надо его изменить.
+Для этого используется ключевое слово _ALTER TABLE_. Данная команда позволяет изменить саму таблицу.
+> ALTER TABLE managers RENAME COLUMN Manager_Name TO Maneger_FirstName;
+
+Или нужно изменить значение. В нашем примере у менеджера Дениса некорректный адрес электронной почты.
+Обновляются значения с помощью команды _UPDATE_
+> UPDATE TABLE managers SET Manager_Mail = 'Denis@mail.ru' WHERE Manager_ID = 4
+
+Можно обновлять несколько полей сразу, можно задавать несколько условий.
