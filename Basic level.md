@@ -1,6 +1,7 @@
 # Содержание
 1. [Создание базы данных](https://github.com/Analyst-Vadim/SQL-Examples/blob/main/Basic%20level.md#создание-базы-данных)
 2. [Изменение схемы](https://github.com/Analyst-Vadim/SQL-Examples/blob/main/Basic%20level.md#изменение-схемы-данных)
+3. [Запросы](https://github.com/Analyst-Vadim/SQL-Examples/edit/main/Basic%20level.md#запросы)
 
 # Создание базы данных 
 Создадим базу данных с названием mydb:
@@ -52,3 +53,14 @@
 > UPDATE TABLE managers SET Manager_Mail = 'Denis@mail.ru' WHERE Manager_ID = 4
 
 Можно обновлять несколько полей сразу, можно задавать несколько условий.
+
+# Запросы
+Основная работа аналитика с SQL заключается в написании запросов к базе данных. Запросы бывают разной сложности, начиная от простого вывода какого-то поля или поиска максимального значения, и заканчивая подзапросами, оконными функциями и CTE. 
+Но на самом деле всё это не так сложно и мы всё понемногу разберём.
+
+Самый простой тип запроса - вывести конкретные поля / все:
+> SELECT Manager_FirstName FROM Managers;
+> SELECT * FROM Managers;
+
+![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/598ed8e7-83cc-41c7-affa-f4350e1cedde)
+![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/dacea658-844b-4ef9-8344-f50fdc8a66d3)
