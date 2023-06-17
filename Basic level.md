@@ -1,7 +1,7 @@
 # Содержание
 1. [Создание базы данных](https://github.com/Analyst-Vadim/SQL-Examples/blob/main/Basic%20level.md#создание-базы-данных)
 2. [Изменение схемы](https://github.com/Analyst-Vadim/SQL-Examples/blob/main/Basic%20level.md#изменение-схемы-данных)
-3. [Запросы](https://github.com/Analyst-Vadim/SQL-Examples/edit/main/Basic%20level.md#запросы)
+3. [Запросы](https://github.com/Analyst-Vadim/SQL-Examples/blob/main/Basic%20level.md#запросы)
 
 # Создание базы данных 
 Создадим базу данных с названием mydb:
