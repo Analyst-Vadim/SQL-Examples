@@ -64,3 +64,10 @@
 
 ![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/598ed8e7-83cc-41c7-affa-f4350e1cedde)
 ![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/dacea658-844b-4ef9-8344-f50fdc8a66d3)
+
+Однако зачастую нам нужно вывести что-то по конкретному условию. Для этого используется ключевое слово _WHERE_
+Допустим, мы хотим узнать почту Cate
+>SELECT Manager_Mail from managers where Manager_FirstName = 'Cate';
+
+![image](https://github.com/Analyst-Vadim/SQL-Examples/assets/85847435/048aa305-3799-446b-b854-036583fabb1f)
+
